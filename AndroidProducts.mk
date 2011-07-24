@@ -26,4 +26,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_showcasemtd.mk
+    $(LOCAL_DIR)/showcasemtd.mk
