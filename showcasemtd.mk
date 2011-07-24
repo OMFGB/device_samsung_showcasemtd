@@ -96,7 +96,7 @@ PRODUCT_PACKAGES += \
 
 # apns config file
 PRODUCT_COPY_FILES += \
-        vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+        device/samsung/showcasemtd/apns-conf.xml:system/etc/apns-conf.xml
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -127,7 +127,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
        ro.cdma.home.operator.alpha=CellularSouth \
        ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83 \
        ro.cdma.data_retry_config=default_randomization=2000,0,0,120000,180000,540000,960000 \
-       ro.cdma.otaspnumschema=SELC,1,80,99 \
+       ro.cdma.otaspnumschema=SELC,3,00,07,80,87,88,99 \
        ro.telephony.call_ring.multiple=false \
        ro.telephony.call_ring.delay=3000 \
        ro.telephony.call_ring.absent=true \
