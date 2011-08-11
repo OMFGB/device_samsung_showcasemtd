@@ -42,24 +42,24 @@ DEVICE_PACKAGE_OVERLAYS := device/samsung/showcasemtd/overlay
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES := \
-	device/samsung/showcasemtd/asound.conf:system/etc/asound.conf \
-	device/samsung/showcasemtd/vold.fstab:system/etc/vold.fstab \
+	device/samsung/fascinatemtd/asound.conf:system/etc/asound.conf \
+	device/samsung/fascinatemtd/vold.fstab:system/etc/vold.fstab \
 	device/samsung/aries-common/egl.cfg:system/lib/egl/egl.cfg
 
 # Init files
 PRODUCT_COPY_FILES += \
 	device/samsung/aries-common/init.rc:root/init.rc \
-	device/samsung/showcasemtd/init.aries.rc:root/init.aries.rc \
-	device/samsung/showcasemtd/ueventd.aries.rc:root/ueventd.aries.rc \
+	device/samsung/fascinatemtd/init.aries.rc:root/init.aries.rc \
+	device/samsung/fascinatemtd/ueventd.aries.rc:root/ueventd.aries.rc \
 	device/samsung/aries-common/setupenv.sh:recovery/root/sbin/setupenv.sh
 
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
 	device/samsung/aries-common/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl \
-	device/samsung/showcasemtd/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
-	device/samsung/showcasemtd/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
-	device/samsung/showcasemtd/s3c-keypad.kl:system/usr/keylayout/s3c-keypad.kl
+	device/samsung/fascinatemtd/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
+	device/samsung/fascinatemtd/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
+	device/samsung/fascinatemtd/s3c-keypad.kl:system/usr/keylayout/s3c-keypad.kl
 
 # Generated kcm keymaps
 PRODUCT_PACKAGES := \
@@ -96,7 +96,7 @@ PRODUCT_PACKAGES += \
 
 # apns config file
 PRODUCT_COPY_FILES += \
-        device/samsung/showcasemtd/apns-conf.xml:system/etc/apns-conf.xml
+        device/samsung/fascinatemtd/apns-conf.xml:system/etc/apns-conf.xml
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -174,12 +174,12 @@ PRODUCT_LOCALES := hdpi
 
 # kernel modules
 PRODUCT_COPY_FILES += \
-    device/samsung/showcasemtd/bcm4329.ko:system/lib/modules/bcm4329.ko \
-    device/samsung/showcasemtd/cifs.ko:system/lib/modules/cifs.ko \
-    device/samsung/showcasemtd/tun.ko:system/lib/modules/tun.ko
+    device/samsung/fascinatemtd/bcm4329.ko:system/lib/modules/bcm4329.ko \
+    device/samsung/fascinatemtd/cifs.ko:system/lib/modules/cifs.ko \
+    device/samsung/fascinatemtd/tun.ko:system/lib/modules/tun.ko
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/samsung/showcasemtd/kernel
+    LOCAL_KERNEL := device/samsung/fascinatemtd/kernel
 else
     LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
