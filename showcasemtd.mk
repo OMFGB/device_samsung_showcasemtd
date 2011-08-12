@@ -123,7 +123,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
        ro.telephony.default_network=4 \
        ro.ril.def.agps.mode=2 \
        ro.ril.samsung_cdma=true \
-       ro.cdma.home.operator.numeric=311230 \
+       ro.cdma.home.operator.numeric=310023 \
        ro.cdma.home.operator.alpha=CellularSouth \
        ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83 \
        ro.cdma.data_retry_config=default_randomization=2000,0,0,120000,180000,540000,960000 \
